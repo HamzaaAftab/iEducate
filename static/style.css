@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.navbar img {
+    height: 58px;
+    width: 58px;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: 2px 25px;
+    /* align-self: flex-start; */
+}
+
+.nav-list {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding: 1px 0px;
+}
+
+
+.nav-list li {
+    list-style: none;
+    margin: 0px 5px;
+    margin: 0px 24px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    padding: 11px 17px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+}
+
+.nav-list li a:hover {
+    color: rgb(181, 179, 179);
+}
+
+.search {
+    text-align: right;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 29px;
+}
+
+.search input {
+    padding: 6px;
+    padding: 5px;
+    width: 31%;
+    margin: 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.burger {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    margin: 5px 3px;
+    background-color: white;
+}
+
+.btn-sml {
+    padding: 7px;
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 1px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sml:hover {
+    background-color: rgba(255, 0, 0, 0.908);
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url('../static/img/bg2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.boxmain {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 68%;
+}
+
+.firstHalf {
+    color: white;
+    width: 500px;
+}
+
+.vid-back {
+    transform: scale(0);
+    transition: all 0.7s ease-out;
+}
+
+.vid-cls {
+    display: none;
+}
+
+.play-vid-bg {
+    height: 500px;
+    width: 750px;
+    background-color: black;
+    position: fixed;
+    top: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    transform: scale(1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.play-vid {
+    display: block;
+    height: 300px;
+    width: 535px;
+    margin-top: 9px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: center;
+}
+
+.secondHalf {
+    width: 155px;
+}
+
+.secondHalf img {
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 288px;
+}
+
+.big-txt {
+    font-size: 33px;
+    font-weight: bold;
+    margin: 6px 0px;
+    font-family: 'Bitter', serif;
+}
+
+.sml-txt {
+    font-family: 'Bitter', serif;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 9px 17px;
+    border-radius: 5px;
+    margin: 8px 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #050557b0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72%;
+    margin: 57px auto
+}
+
+.content img {
+    width: 17%;
+    height: 17%;
+    margin: 2px 22px;
+    border-radius: 15px;
+}
+
+.pera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.thirdSec {
+    background-color: rgb(233, 230, 230, 1);
+}
+
+.thirdSec h2 {
+    margin: 0px 0px 23px 4px;
+    padding: 2px;
+    border-bottom: 4px solid #58083c;
+}
+
+.thrdSec-box {
+    display: flex;
+    width: 88%;
+    margin: auto;
+    justify-content: center;
+}
+
+.thrdSec-sub-box {
+    height: 80%;
+    width: 24%;
+    padding: 13px;
+}
+
+.thrdSec-sub-box img {
+    height: 239px;
+    width: 335px;
+    border: 2px solid #58083c;
+}
+
+.items {
+    padding: 13px 0px;
+    width: 64%;
+}
+
+.info-items,
+.Sub-box {
+    display: flex;
+}
+
+.box {
+    width: 49%;
+}
+
+.Sub-box img {
+    width: 90px;
+    height: 90px;
+    margin: 0px 6px 13px 6px;
+    border: 2px solid #58083c;
+}
+
+.info-pera {
+    padding: 3px;
+}
+
+.media-box {
+    width: 20%;
+    height: 191px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.media-box a {
+    text-decoration: none;
+    color: black;
+}
+
+.media-box-property:hover {
+    box-shadow: 9px 9px 25px -4px black;
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+.media-box h2 {
+    padding: 4px;
+}
+
+.med-box-color {
+    background-color: #b5b5fb4d;
+    border-radius: 15px;
+}
+
+.forth-sec-box {
+    display: flex;
+    width: 65%;
+    margin: 64px auto;
+    border-radius: 16px;
+    box-shadow: 4px 9px 16px 0px black;
+}
+
+.lastSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #080808;
+    color: white;
+}
+
+.lst-sec-items {
+    width: 74%;
+    display: flex;
+    margin: 27px;
+}
+
+.lst-Big-pera {
+    width: 56%
+}
+
+.lst-Sml-pera {
+    width: 32%;
+}
+
+.lst-pera {
+    margin: 19px;
+    border-top: 2px solid rgba(255, 255, 255, 0.21);
+    padding: 21px 0px;
+    margin-bottom: 0px;
+}
+
+.lst-head {
+    margin: 10px 19px;
+}
+
+.ftr {
+    height: 55px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+/* For Responsive position of logo*/
+.align-self {
+    align-self: flex-start;
+}
